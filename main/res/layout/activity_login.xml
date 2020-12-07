@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".LoginActivity">
+
+    <include
+        android:id="@+id/toolbar"
+
+        layout="@layout/bar_layout"
+        />
+    <LinearLayout
+        android:id="@+id/upper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="40dp"
+
+        >
+       <ImageView
+           android:layout_width="wrap_content"
+           android:layout_height="125dp"
+           android:src="@drawable/heart"
+           android:paddingRight="200dp"
+           ></ImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            android:paddingLeft="35dp"
+            android:layout_marginTop="-60dp"
+            android:text="Epharma"
+            ></TextView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/upper"
+        android:padding="6dp"
+        android:orientation="vertical"
+        android:id="@+id/uper"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            ></TextView>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/email"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="18dp"
+            app:met_floatingLabel="normal"
+            android:hint="Email"></com.rengwuxian.materialedittext.MaterialEditText>
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/password"
+            android:inputType="textPassword"
+            android:layout_marginTop="18dp"
+            app:met_floatingLabel="normal"
+            android:hint="Password"></com.rengwuxian.materialedittext.MaterialEditText>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Log in"
+            android:id="@+id/btn_login"
+            android:background="@drawable/back"
+            android:layout_marginTop="30dp"
+            android:color="#92B800"
+            android:textColor="#FFFFFF"
+            ></Button>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/uper"
+        android:paddingBottom="20dp"
+        android:gravity="center_horizontal"
+        android:paddingLeft="110dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/forgot_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forgot Password?"
+            android:clickable="true"
+            android:textColor="#4343BD"
+            android:textSize="20dp"
+
+
+            ></TextView>
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't have an account?"
+            android:textSize="20dp"
+            ></TextView>
+        <TextView
+            android:id="@+id/register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+
+            android:textColor="#4343BD"
+            android:text="Register"
+            ></TextView>
+        <TextView
+            android:id="@+id/Admin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textColor="#4343BD"
+            android:text="Admin Login"
+            ></TextView>
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

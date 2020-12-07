@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_centerHorizontal="@bool/default_circle_indicator_centered"
+    android:layout_height="match_parent">
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="1."
+    android:textSize="30dp"
+    android:id="@+id/srNo"
+
+    ></TextView>
+    <TextView
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Panadol"
+        android:textSize="30dp"
+        android:id="@+id/CartItemMedName"
+        ></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/CartItemPrice"
+        android:textSize="30dp"
+        android:text="100"
+        android:layout_marginLeft="20dp"
+        ></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/CaartItemQty"
+        android:text="20"
+        android:layout_marginLeft="20dp"
+        ></TextView>
+</LinearLayout>

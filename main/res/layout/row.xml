@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="15dp"
+    android:id="@+id/parent_layout">
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="90dp"
+        android:id="@+id/imgrc"
+        android:src="@drawable/whitehome"/>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@+id/imgrc"
+        android:text="Name"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/genname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="35dp"
+        android:layout_toRightOf="@+id/imgrc"
+        android:text="Generic Name"
+        android:textColor="#000"
+        android:textSize="20dp" />
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/genname"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp"
+
+        android:layout_toRightOf="@+id/imgrc"
+        android:text="Price"
+        android:textColor="#000"
+        android:textSize="15dp" />
+    <TextView
+        android:id="@+id/Availability"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/price"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp"
+
+        android:layout_toRightOf="@+id/imgrc"
+        android:text="Availability"
+        android:textColor="#000"
+        android:textSize="15dp" />
+
+
+
+</RelativeLayout>
